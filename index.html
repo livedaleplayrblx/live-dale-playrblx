@@ -1,210 +1,233 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LIVE DALE PLAY RBLX Shows</title>
+    <title>LIVE DALE PLAY RBLX</title>
 
     <style>
 
         *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         body{
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            scroll-behavior: smooth;
+            background:linear-gradient(135deg,#0f172a,#1e293b);
+            color:white;
+            scroll-behavior:smooth;
         }
 
         header{
-            width: 100%;
-            padding: 20px 50px;
-            background: rgba(7, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            width:100%;
+            padding:20px 50px;
+            background:rgba(0,0,0,0.8);
+            backdrop-filter:blur(10px);
+            position:sticky;
+            top:0;
+            z-index:1000;
         }
 
         nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
         }
 
         .logo img{
-            width: 150px;
-            cursor: pointer;
-            transition: 0.3s;
+            width:120px;
+            transition:0.3s;
+            cursor:pointer;
         }
 
         .logo img:hover{
-            transform: scale(1.1);
+            transform:scale(1.08);
         }
 
         nav ul{
-            display: flex;
-            gap: 20px;
-            list-style: none;
+            display:flex;
+            gap:20px;
+            list-style:none;
         }
 
         nav a{
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
         }
 
         nav a:hover{
-            color: #00d4ff;
+            color:#00d4ff;
         }
 
         .hero{
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
+            min-height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:40px;
+
             background:
             linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
             url("img/quimera.png");
 
-            background-size: cover;
-            background-position: center;
+            background-size:cover;
+            background-position:center;
         }
 
         .hero-content{
-            max-width: 800px;
+            max-width:800px;
         }
 
-        .hero h2{
-            font-size: 60px;
-            margin-bottom: 20px;
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
         }
 
         .hero p{
-            font-size: 20px;
-            line-height: 1.7;
-            color: #d1d5db;
+            font-size:20px;
+            line-height:1.8;
+            color:#d1d5db;
         }
 
         .btn{
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 35px;
-            border-radius: 12px;
-            background: #00d4ff;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
+            display:inline-block;
+            margin-top:30px;
+            padding:15px 35px;
+            border-radius:12px;
+            background:#00d4ff;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
         }
 
         .btn:hover{
-            background: #0099cc;
-            transform: scale(1.05);
+            background:#0099cc;
+            transform:scale(1.05);
         }
 
         section{
-            padding: 80px 50px;
+            padding:80px 50px;
         }
 
         .titulo{
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 50px;
-            color: #ffffff;
+            text-align:center;
+            font-size:40px;
+            margin-bottom:50px;
+        }
+
+        .info{
+            text-align:center;
+            max-width:900px;
+            margin:auto;
+            line-height:1.8;
+            color:#d1d5db;
+            font-size:18px;
         }
 
         .cards{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
         }
 
         .card{
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 25px;
-            transition: 0.3s;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            background:rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:25px;
+            transition:0.3s;
+            backdrop-filter:blur(15px);
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
         }
 
         .card:hover{
-            transform: translateY(-10px);
-            box-shadow: 0 0 25px rgba(0,212,255,0.3);
+            transform:translateY(-10px);
+            box-shadow:0 0 25px rgba(0,212,255,0.3);
         }
 
         .card h3{
-            margin-bottom: 15px;
+            margin-bottom:15px;
         }
 
         .card h3 a{
-            color: #00d4ff;
-            text-decoration: none;
+            color:#00d4ff;
+            text-decoration:none;
         }
 
         .card h3 a:hover{
-            color: white;
+            color:white;
         }
 
         .card p{
-            color: #d1d5db;
-            line-height: 1.6;
+            line-height:1.7;
+            color:#d1d5db;
+        }
+
+        #info-shows{
+            display:flex;
+            flex-direction:column;
+            gap:50px;
+        }
+
+        .show-info{
+            background:rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:40px;
+            backdrop-filter:blur(15px);
+            text-align:center;
+        }
+
+        .show-info p{
+            max-width:900px;
+            margin:auto;
+            line-height:1.8;
+            color:#d1d5db;
+            font-size:18px;
         }
 
         .redes{
-            text-align: center;
+            text-align:center;
         }
 
         .redes a{
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.08);
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
+            display:inline-block;
+            margin:10px;
+            padding:15px 25px;
+            border-radius:12px;
+            background:rgba(255,255,255,0.08);
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
         }
 
         .redes a:hover{
-            background: #00d4ff;
-        }
-
-        #futtura{
-            background: rgba(255,255,255,0.03);
-            text-align: center;
-        }
-
-        #futtura p{
-            max-width: 900px;
-            margin: auto;
-            line-height: 1.8;
-            color: #d1d5db;
-            font-size: 18px;
+            background:#00d4ff;
         }
 
         footer{
-            text-align: center;
-            padding: 30px;
-            background: rgba(0,0,0,0.4);
-            color: #9ca3af;
+            text-align:center;
+            padding:30px;
+            background:rgba(0,0,0,0.4);
+            color:#9ca3af;
         }
 
     </style>
+
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
 
         <nav>
@@ -228,11 +251,11 @@
 
         <div class="hero-content">
 
-            <h2>Bienvenidos a LIVE DALE PLAY RBLX</h2>
+            <h1>LIVE DALE PLAY RBLX</h1>
 
             <p>
-                Bienvenidos a nuestra empresa creadora de shows en Roblox,
-                acá podrás encontrar las fechas de cada show y nuestras
+                Bienvenidos a nuestra empresa creadora de shows en Roblox.
+                Acá podrás encontrar las fechas de cada show y nuestras
                 redes sociales.
             </p>
 
@@ -244,13 +267,35 @@
 
     </section>
 
+    <!-- SOBRE NOSOTROS -->
+    <section>
+
+        <h2 class="titulo">
+            Sobre Nosotros
+        </h2>
+
+        <p class="info">
+
+            Somos una empresa dedicada a recrear conciertos,
+            festivales y experiencias inmersivas dentro de Roblox.
+
+            Creamos escenarios únicos, efectos visuales,
+            iluminación y shows inspirados en artistas reales.
+
+        </p>
+
+    </section>
+
     <!-- SHOWS -->
     <section id="shows">
 
-        <h2 class="titulo">Próximos Shows</h2>
+        <h2 class="titulo">
+            Próximos Shows
+        </h2>
 
         <div class="cards">
 
+            <!-- FUTTURA -->
             <div class="card">
 
                 <h3>
@@ -261,15 +306,19 @@
 
                 <p>
                     FUTTTURA es el show de Tini Stoessel en Tecnópolis,
-                    pensado como una experiencia inmersiva que mezcla
-                    música en vivo, tecnología y visuales futuristas.
+                    pensado como una experiencia inmersiva.
                 </p>
 
             </div>
 
+            <!-- QUIMERA -->
             <div class="card">
 
-                <h3>QUIMERA TOUR Movistar Arena Night 1</h3>
+                <h3>
+                    <a href="#quimera">
+                        QUIMERA TOUR MOVISTAR ARENA
+                    </a>
+                </h3>
 
                 <p>
                     No es un show. Es una experiencia 360°.
@@ -278,58 +327,125 @@
 
             </div>
 
+            <!-- SIX SEX -->
+            <div class="card">
+
+                <h3>
+                    <a href="#sixsex">
+                        SIX SEX C ART MEDIA
+                    </a>
+                </h3>
+
+                <p>
+                    ⚡ Una experiencia rave futurista
+                    llena de energía y visuales inmersivas.
+                </p>
+
+            </div>
+
         </div>
 
     </section>
 
-    <!-- INFO FUTTURA -->
-    <section id="futtura">
+    <!-- INFO SHOWS -->
+    <section id="info-shows">
 
-        <h2 class="titulo">SHOW FUTTURA TECNOPOLIS</h2>
+        <!-- FUTTURA -->
+        <div class="show-info" id="futtura">
 
-        <p>
+            <h2 class="titulo">
+                SHOW FUTTURA TECNOPOLIS
+            </h2>
 
-            FUTTTURA es una experiencia inmersiva inspirada
-            en el universo futurista de Tini Stoessel.
+            <p>
 
-            El show combina pantallas gigantes, efectos visuales,
-            escenarios interactivos y música en vivo dentro de Roblox.
+                FUTTTURA es una experiencia inmersiva inspirada
+                en el universo futurista de Tini Stoessel.
 
-            <br><br>
+                <br><br>
 
-            📅 Fecha: 25 de Mayo <br>
-            🕒 Horario: 20:00hs <br>
-            📍 Ubicación: Tecnópolis Roblox
+                📅 Fecha: 25 de Mayo <br>
+                🕒 Horario: 20:00hs <br>
+                📍 Ubicación: Tecnópolis Roblox
 
-        </p>
+            </p>
+
+        </div>
+
+        <!-- QUIMERA -->
+        <div class="show-info" id="quimera">
+
+            <h2 class="titulo">
+                QUIMERA TOUR MOVISTAR ARENA
+            </h2>
+
+            <p>
+
+                QUIMERA TOUR llega con una experiencia futurista
+                llena de luces, visuales inmersivas y escenarios únicos.
+
+                <br><br>
+
+                📅 Próximamente <br>
+                🕒 Horario a confirmar <br>
+                📍 Ubicación: Movistar Arena Roblox
+
+            </p>
+
+        </div>
+
+        <!-- SIX SEX -->
+        <div class="show-info" id="sixsex">
+
+            <h2 class="titulo">
+                SIX SEX C ART MEDIA
+            </h2>
+
+            <p>
+
+                ⚡ SIX SEX llega a C Art Media con una experiencia explosiva
+                donde el rave, el pop y la electrónica se mezclan
+                en una puesta en escena única.
+
+                <br><br>
+
+                📅 Fecha: 6 y 7 de Junio <br>
+                🕒 Horario: 20:00hs <br>
+                📍 Ubicación: C Art Media
+
+            </p>
+
+        </div>
 
     </section>
 
     <!-- REDES -->
     <section id="redes">
 
-        <h2 class="titulo">Nuestras Redes</h2>
+        <h2 class="titulo">
+            Nuestras Redes
+        </h2>
 
         <div class="redes">
-
-            <a href="#" target="_blank">Instagram</a>
 
             <a href="https://discord.gg/a28eCNz2" target="_blank">
                 Discord
             </a>
 
-            <a href="#" target="_blank">TikTok</a>
-
-            <a href="#" target="_blank">YouTube</a>
+            <a href="https://www.tiktok.com/@livedaleplay.rblx" target="_blank">
+                TikTok
+            </a>
 
         </div>
 
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        © 2026 LIVE DALE PLAY RBLX Shows | Todos los derechos reservados
+        © 2026 LIVE DALE PLAY RBLX
     </footer>
 
 </body>
 
 </html>
+
