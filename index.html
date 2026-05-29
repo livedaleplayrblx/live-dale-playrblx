@@ -8,7 +8,7 @@
 
     <title>LIVE DALE PLAY RBLX</title>
 
-    <!-- FUENTE -->
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -43,11 +43,11 @@
 
             z-index:9999;
 
-            padding:18px 70px;
+            padding:20px 70px;
 
             backdrop-filter:blur(15px);
 
-            background:rgba(0,0,0,0.45);
+            background:rgba(0,0,0,0.55);
 
             border-bottom:1px solid rgba(255,255,255,0.05);
         }
@@ -59,8 +59,12 @@
         }
 
         .logo img{
-            width:125px;
-            transition:0.3s;
+            width:120px;
+            cursor:pointer;
+            transition:0.4s;
+
+            position:relative;
+            z-index:99999;
         }
 
         .logo img:hover{
@@ -69,18 +73,18 @@
 
         nav ul{
             display:flex;
-            list-style:none;
             gap:35px;
+            list-style:none;
         }
 
         nav a{
-            color:white;
             text-decoration:none;
-            font-size:14px;
+            color:white;
+            font-size:15px;
             font-weight:700;
-            text-transform:uppercase;
             letter-spacing:1px;
             transition:0.3s;
+            text-transform:uppercase;
         }
 
         nav a:hover{
@@ -91,13 +95,12 @@
 
         .hero{
             height:100vh;
+            position:relative;
 
             display:flex;
             align-items:center;
 
             padding:140px 70px 80px;
-
-            position:relative;
 
             background:url("img/quimera.png");
             background-size:cover;
@@ -111,39 +114,40 @@
 
             background:linear-gradient(
                 to top,
-                rgba(0,0,0,0.98),
-                rgba(0,0,0,0.3)
+                rgba(0,0,0,0.97),
+                rgba(0,0,0,0.25)
             );
         }
 
         .hero-content{
             position:relative;
             z-index:2;
-            max-width:850px;
+            max-width:900px;
         }
 
         .hero-subtitle{
-            color:#00cfff;
             font-size:16px;
             font-weight:700;
-            letter-spacing:5px;
+            letter-spacing:4px;
+            color:#00cfff;
             margin-bottom:25px;
+            text-transform:uppercase;
 
-            text-shadow:0 0 20px rgba(0,212,255,0.8);
+            text-shadow:0 0 15px rgba(0,212,255,0.8);
         }
 
         .hero h1{
             font-size:150px;
-            line-height:0.88;
+            line-height:0.9;
             font-weight:900;
-            margin-bottom:25px;
             text-transform:uppercase;
+            margin-bottom:30px;
         }
 
         .hero p{
             font-size:22px;
-            line-height:1.8;
             color:#d1d5db;
+            line-height:1.8;
             max-width:700px;
         }
 
@@ -151,10 +155,11 @@
             display:flex;
             gap:20px;
             margin-top:40px;
+            flex-wrap:wrap;
         }
 
         .btn{
-            padding:18px 40px;
+            padding:18px 38px;
             border-radius:50px;
             text-decoration:none;
             font-weight:700;
@@ -171,8 +176,8 @@
         }
 
         .btn-secondary{
-            color:white;
             border:1px solid rgba(255,255,255,0.2);
+            color:white;
             backdrop-filter:blur(20px);
         }
 
@@ -189,8 +194,8 @@
         .section-title{
             font-size:65px;
             font-weight:900;
-            margin-bottom:60px;
             text-transform:uppercase;
+            margin-bottom:70px;
         }
 
         /* SHOWS */
@@ -207,6 +212,8 @@
 
             border-radius:30px;
             overflow:hidden;
+
+            background:black;
 
             transition:0.4s;
         }
@@ -228,12 +235,11 @@
             background:linear-gradient(
                 to top,
                 rgba(0,0,0,0.95),
-                rgba(0,0,0,0.15)
+                rgba(0,0,0,0.1)
             );
 
             display:flex;
             align-items:flex-end;
-
             padding:35px;
         }
 
@@ -241,12 +247,13 @@
             font-size:40px;
             font-weight:900;
             margin-bottom:15px;
+            text-transform:uppercase;
         }
 
         .show-info p{
             color:#d1d5db;
             line-height:1.8;
-            margin-bottom:20px;
+            margin-bottom:25px;
         }
 
         .show-info a{
@@ -268,49 +275,54 @@
 
         .about img{
             width:100%;
+            border-radius:30px;
             height:700px;
             object-fit:cover;
-            border-radius:30px;
         }
 
         .about-text h2{
-            font-size:65px;
+            font-size:70px;
             line-height:1;
             margin-bottom:30px;
             text-transform:uppercase;
         }
 
         .about-text p{
-            font-size:18px;
-            line-height:2;
             color:#d1d5db;
+            line-height:2;
+            font-size:18px;
         }
 
-        /* INFO SHOWS */
+        /* SHOW DETAILS */
 
         .show-details{
-            padding:70px;
-            margin-bottom:40px;
+            padding:80px;
+            border-radius:40px;
 
-            border-radius:35px;
-
-            background:rgba(255,255,255,0.03);
+            background:linear-gradient(
+                135deg,
+                rgba(255,255,255,0.03),
+                rgba(255,255,255,0.01)
+            );
 
             border:1px solid rgba(255,255,255,0.08);
 
             backdrop-filter:blur(20px);
+
+            margin-bottom:40px;
         }
 
         .show-details h2{
-            font-size:50px;
-            margin-bottom:25px;
+            font-size:55px;
+            margin-bottom:30px;
             text-transform:uppercase;
         }
 
         .show-details p{
-            font-size:18px;
-            line-height:2;
+            max-width:1000px;
             color:#d1d5db;
+            line-height:2;
+            font-size:18px;
         }
 
         /* REDES */
@@ -330,17 +342,16 @@
 
             border:1px solid rgba(255,255,255,0.08);
 
-            color:white;
             text-decoration:none;
+            color:white;
 
             transition:0.3s;
         }
 
         .redes a:hover{
+            transform:translateY(-5px);
             background:white;
             color:black;
-
-            transform:translateY(-5px);
         }
 
         /* FOOTER */
@@ -349,15 +360,12 @@
             padding:40px;
             text-align:center;
             color:#777;
-
             border-top:1px solid rgba(255,255,255,0.05);
         }
 
-        /* ========================= */
-        /* RESPONSIVE CELULARES */
-        /* ========================= */
+        /* RESPONSIVE */
 
-        @media(max-width:768px){
+        @media(max-width:900px){
 
             header{
                 padding:15px 20px;
@@ -374,15 +382,19 @@
             }
 
             nav ul{
-                gap:14px;
+                gap:15px;
             }
 
             nav a{
                 font-size:11px;
             }
 
+            section{
+                padding:90px 25px;
+            }
+
             .hero{
-                padding:150px 25px 80px;
+                padding:140px 25px 80px;
                 align-items:center;
             }
 
@@ -411,15 +423,10 @@
             .btn{
                 width:100%;
                 text-align:center;
-                padding:18px;
-            }
-
-            section{
-                padding:90px 25px;
             }
 
             .section-title{
-                font-size:42px;
+                font-size:45px;
             }
 
             .shows-grid{
@@ -443,7 +450,7 @@
             }
 
             .about-text h2{
-                font-size:42px;
+                font-size:45px;
             }
 
             .about-text p{
@@ -545,6 +552,8 @@
 
         <div class="shows-grid">
 
+            <!-- FUTTURA -->
+
             <div class="show-card">
 
                 <img src="img/futtura.png" alt="Futtura">
@@ -553,7 +562,9 @@
 
                     <div class="show-info">
 
-                        <h3>FUTTURA</h3>
+                        <h3>
+                            FUTTURA
+                        </h3>
 
                         <p>
                             Una experiencia futurista inspirada
@@ -570,6 +581,8 @@
 
             </div>
 
+            <!-- QUIMERA -->
+
             <div class="show-card">
 
                 <img src="img/quimera.png" alt="Quimera">
@@ -578,7 +591,9 @@
 
                     <div class="show-info">
 
-                        <h3>QUIMERA</h3>
+                        <h3>
+                            QUIMERA
+                        </h3>
 
                         <p>
                             Un show inmersivo lleno
@@ -595,6 +610,8 @@
 
             </div>
 
+            <!-- SIX SEX -->
+
             <div class="show-card">
 
                 <img src="img/sixsex.png" alt="Six Sex">
@@ -603,7 +620,9 @@
 
                     <div class="show-info">
 
-                        <h3>SIX SEX</h3>
+                        <h3>
+                            SIX SEX
+                        </h3>
 
                         <p>
                             Un rave futurista inspirado
@@ -623,6 +642,138 @@
         </div>
 
     </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="about">
+
+            <img src="img/about.png" alt="About">
+
+            <div class="about-text">
+
+                <h2>
+                    EXPERIENCIAS
+                    INMERSIVAS
+                </h2>
+
+                <p>
+
+                    Somos una empresa dedicada a recrear conciertos,
+                    festivales y experiencias futuristas dentro de Roblox.
+
+                    Creamos escenarios cinematográficos, visuales,
+                    iluminación profesional y eventos inspirados
+                    en artistas reales.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INFO SHOWS -->
+
+    <section>
+
+        <div class="show-details" id="futtura-info">
+
+            <h2>
+                FUTTURA TECNOPOLIS
+            </h2>
+
+            <p>
+
+                FUTTTURA mezcla música, visuales futuristas
+                y experiencias inmersivas inspiradas
+                en el universo de Tini Stoessel.
+
+                <br><br>
+
+                📅 Fecha: 25 de Mayo <br>
+                🕒 Horario: 20:00hs <br>
+                📍 Tecnópolis Roblox
+
+            </p>
+
+        </div>
+
+        <div class="show-details" id="quimera-info">
+
+            <h2>
+                QUIMERA TOUR
+            </h2>
+
+            <p>
+
+                QUIMERA TOUR llega con luces,
+                escenarios gigantes y visuales cinematográficas
+                dentro de Roblox.
+
+                <br><br>
+
+                📅 Próximamente <br>
+                🕒 Horario a confirmar <br>
+                📍 Movistar Arena Roblox
+
+            </p>
+
+        </div>
+
+        <div class="show-details" id="sixsex-info">
+
+            <h2>
+                SIX SEX C ART MEDIA
+            </h2>
+
+            <p>
+
+                SIX SEX llega a C Art Media con una experiencia
+                rave futurista llena de electrónica,
+                visuales y energía extrema.
+
+                <br><br>
+
+                📅 6 y 7 de Junio <br>
+                🕒 20:00hs <br>
+                📍 C Art Media
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- REDES -->
+
+    <section id="redes">
+
+        <h2 class="section-title">
+            REDES
+        </h2>
+
+        <div class="redes">
+
+            <a href="https://discord.gg/a28eCNz2" target="_blank">
+                Discord
+            </a>
+
+            <a href="https://www.tiktok.com/@livedaleplay.rblx" target="_blank">
+                TikTok
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 LIVE DALE PLAY RBLX
+    </footer>
 
 </body>
 
