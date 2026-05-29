@@ -363,52 +363,125 @@
             border-top:1px solid rgba(255,255,255,0.05);
         }
 
-        /* RESPONSIVE */
+        /* ========================= */
+        /* RESPONSIVE CELULARES */
+        /* ========================= */
 
-        @media(max-width:900px){
+        @media(max-width:768px){
 
             header{
-                padding:20px 30px;
+                padding:15px 20px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .logo img{
+                width:110px;
             }
 
             nav ul{
-                gap:20px;
+                gap:18px;
+                flex-wrap:wrap;
+                justify-content:center;
             }
 
-            section{
-                padding:100px 30px;
+            nav a{
+                font-size:13px;
             }
 
             .hero{
-                padding:120px 30px 80px;
+                padding:170px 25px 80px;
+                align-items:flex-start;
+            }
+
+            .hero-subtitle{
+                font-size:13px;
+                letter-spacing:3px;
+                line-height:1.5;
             }
 
             .hero h1{
-                font-size:75px;
+                font-size:70px;
+                line-height:0.95;
+                margin-bottom:20px;
             }
 
             .hero p{
-                font-size:18px;
+                font-size:16px;
+                line-height:1.7;
+            }
+
+            .hero-buttons{
+                flex-direction:column;
+                width:100%;
+            }
+
+            .btn{
+                width:100%;
+                text-align:center;
+                padding:18px;
+                font-size:16px;
+            }
+
+            section{
+                padding:90px 25px;
             }
 
             .section-title{
-                font-size:45px;
+                font-size:40px;
+                margin-bottom:40px;
+            }
+
+            .shows-grid{
+                grid-template-columns:1fr;
+            }
+
+            .show-card{
+                height:450px;
+            }
+
+            .show-info h3{
+                font-size:30px;
             }
 
             .about{
                 grid-template-columns:1fr;
             }
 
+            .about img{
+                height:400px;
+            }
+
             .about-text h2{
                 font-size:45px;
             }
 
+            .about-text p{
+                font-size:16px;
+            }
+
             .show-details{
-                padding:40px;
+                padding:35px 25px;
             }
 
             .show-details h2{
-                font-size:35px;
+                font-size:32px;
+            }
+
+            .show-details p{
+                font-size:16px;
+            }
+
+            .redes{
+                flex-direction:column;
+            }
+
+            .redes a{
+                width:100%;
+                text-align:center;
             }
 
         }
@@ -485,26 +558,22 @@
 
         <div class="shows-grid">
 
-            <!-- FUTTTURA -->
-
             <div class="show-card">
 
-                <img src="img/futttura.jpeg" alt="Futtura">
+                <img src="img/futtura.png" alt="Futtura">
 
                 <div class="show-overlay">
 
                     <div class="show-info">
 
-                        <h3>
-                            FUTTTURA
-                        </h3>
+                        <h3>FUTTURA</h3>
 
                         <p>
                             Una experiencia futurista inspirada
                             en el universo de Tini Stoessel.
                         </p>
 
-                        <a href="#futttura-info">
+                        <a href="#futtura-info">
                             VER MÁS
                         </a>
 
@@ -514,19 +583,15 @@
 
             </div>
 
-            <!-- QUIMERA -->
-
             <div class="show-card">
 
-                <img src="img/quimeramovistar.png" alt="Quimera">
+                <img src="img/quimera.png" alt="Quimera">
 
                 <div class="show-overlay">
 
                     <div class="show-info">
 
-                        <h3>
-                            QUIMERA
-                        </h3>
+                        <h3>QUIMERA</h3>
 
                         <p>
                             Un show inmersivo lleno
@@ -543,19 +608,15 @@
 
             </div>
 
-            <!-- SIX SEX -->
-
             <div class="show-card">
 
-                <img src="img/sixsex.jpeg" alt="Six Sex">
+                <img src="img/sixsex.png" alt="Six Sex">
 
                 <div class="show-overlay">
 
                     <div class="show-info">
 
-                        <h3>
-                            SIX SEX
-                        </h3>
+                        <h3>SIX SEX</h3>
 
                         <p>
                             Un rave futurista inspirado
@@ -575,138 +636,6 @@
         </div>
 
     </section>
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <div class="about">
-
-            <img src="img/foto.png" alt="About">
-
-            <div class="about-text">
-
-                <h2>
-                    EXPERIENCIAS
-                    INMERSIVAS
-                </h2>
-
-                <p>
-
-                    Somos una empresa dedicada a recrear conciertos,
-                    festivales y experiencias futuristas dentro de Roblox.
-
-                    Creamos escenarios cinematográficos, visuales,
-                    iluminación profesional y eventos inspirados
-                    en artistas reales.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- INFO SHOWS -->
-
-    <section>
-
-        <div class="show-details" id="futttura-info">
-
-            <h2>
-                FUTTURA TECNOPOLIS
-            </h2>
-
-            <p>
-
-                FUTTTURA mezcla música, visuales futuristas
-                y experiencias inmersivas inspiradas
-                en el universo de Tini Stoessel.
-
-                <br><br>
-
-                📅 Fecha: 20 de Junio <br>
-                🕒 Horario: 20:00hs <br>
-                📍 Tecnópolis Roblox
-
-            </p>
-
-        </div>
-
-        <div class="show-details" id="quimera-info">
-
-            <h2>
-                QUIMERA TOUR
-            </h2>
-
-            <p>
-
-                QUIMERA TOUR llega con luces,
-                escenarios gigantes y visuales cinematográficas
-                dentro de Roblox.
-
-                <br><br>
-
-                📅 Próximamente <br>
-                🕒 Horario a confirmar <br>
-                📍 Movistar Arena Roblox
-
-            </p>
-
-        </div>
-
-        <div class="show-details" id="sixsex-info">
-
-            <h2>
-                SIX SEX C ART MEDIA
-            </h2>
-
-            <p>
-
-                SIX SEX llega a C Art Media con una experiencia
-                rave futurista llena de electrónica,
-                visuales y energía extrema.
-
-                <br><br>
-
-                📅 6 y 7 de Junio <br>
-                🕒 20:00hs <br>
-                📍 C Art Media
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- REDES -->
-
-    <section id="redes">
-
-        <h2 class="section-title">
-            REDES
-        </h2>
-
-        <div class="redes">
-
-            <a href="https://discord.gg/a28eCNz2" target="_blank">
-                Discord
-            </a>
-
-            <a href="https://www.tiktok.com/@livedaleplay.rblx" target="_blank">
-                TikTok
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-        © 2026 LIVE DALE PLAY RBLX
-    </footer>
 
 </body>
 
